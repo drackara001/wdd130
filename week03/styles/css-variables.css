@@ -1,0 +1,20 @@
+# all css variables must be defined and stored in the :css root selector to be reused in the css file. # variables with more than one word should b written using the kebab style (-) hyphen between the words.:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-size-large: 24px;
+    --standard: 16px;
+}
+
+# after defining the css rules as above,
+they can be use any where in the css file by calling the var() function. .header {
+    background-colo: var(--primary-color);
+    font-size: var(--font-size-large);
+    margin: var(--margin-standard);
+
+}
+
+# if text color is not defined it use white as fall back value. .button {
+    background-color: var(--secondary-color);
+    padding: var(--margin-standard);
+    color: var(--text-color, white);
+}

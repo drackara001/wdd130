@@ -29,7 +29,7 @@ aside {
 }
 
 aside h2 {
-    position: absolute;
+    position: relative;
     top: 10px;
     left: 10px;
     background: rgba(0, 64, 128, 0.7);

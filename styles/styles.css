@@ -4,16 +4,77 @@
      box-sizing: border-box;
  }
 
- /* class selector */
- .box {
-     margin: 1rem;
-     border: 1px solid rgb(0 0 0 / 10%);
-     padding: 1rem;
-     background-color: #ddd;
-     color: #000;
+ header,
+ .grid,
+ footer {
+     max-width: 840px;
+     margin: 0 auto;
  }
 
- /* Main profile image */
+ nav {
+     background-color: steelblue;
+     padding: 1rem;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+
+ nav a {
+     display: block;
+     padding: 0.5rem;
+     text-decoration: none;
+     font-size: 1.2rem;
+     font-weight: 700;
+     color: #fff;
+ }
+
+ nav a:hover {
+     background-color: #003f7f;
+     border-radius: 4px;
+ }
+
+ h1 {
+     border-bottom: 2px solid steelblue;
+     margin-bottom: 1rem;
+     padding-bottom: 0.5rem;
+ }
+
+ .grid {
+     display: grid;
+     grid-template-columns: 1fr 2fr;
+     /* aside smaller, main larger */
+     gap: 1rem;
+     align-items: start;
+ }
+
+ aside {
+     width: 20rem;
+     position: relative;
+     grid-column: 1/2;
+     grid-row: 1/2;
+     background-color: #f9f9f9;
+     padding: 1rem;
+     border-radius: 8px;
+     box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+ }
+
+ aside h2 {
+     margin-bottom: 1rem;
+     color: steelblue;
+ }
+
+ aside img {
+     width: 100%;
+     height: auto;
+     margin-bottom: 1rem;
+     border-radius: 4px;
+ }
+
+ main {
+     grid-column: 2/3;
+     margin: 1rem;
+ }
+
  main img {
      display: block;
      margin: 0 auto 1rem auto;
@@ -21,37 +82,6 @@
      box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
  }
 
- /* Aside section */
- aside {
-     position: relative;
-     max-width: 960px;
-     margin: 2rem auto;
-     padding: 0;
-     background-color: #fff;
-     border-radius: 8px;
-     overflow: hidden;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
- }
-
- aside img {
-     width: 100%;
-     height: auto;
-     display: block;
- }
-
- aside h2 {
-     position: absolute;
-     top: 20px;
-     left: 20px;
-     background-color: rgba(0, 64, 128, 0.7);
-     color: #fff;
-     padding: 0.5rem 1rem;
-     border-radius: 4px;
-     font-size: 1.5rem;
-     font-weight: bold;
- }
-
- /* footer */
  footer {
      background-color: #004080;
      color: white;

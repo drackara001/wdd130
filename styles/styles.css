@@ -1,0 +1,83 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ /* class selector */
+ .box {
+     margin: 1rem;
+     border: 1px solid rgb(0 0 0 / 10%);
+     padding: 1rem;
+     background-color: #ddd;
+     color: #000;
+ }
+
+ /* Aside section */
+ aside {
+     max-width: 960px;
+     margin: 2rem auto;
+     padding: 1rem;
+     background-color: #fff;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ aside h2 {
+     color: #004080;
+     margin-bottom: 1rem;
+ }
+
+ aside img {
+     max-width: 100%;
+     height: auto;
+     margin-bottom: 1rem;
+     border-radius: 4px;
+ }
+
+ main img {
+     display: block;
+     margin: 0 auto 1rem auto;
+     border-radius: 50%;
+     box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+ }
+
+ /* Aside container */
+ aside {
+     position: relative;
+     max-width: 960px;
+     margin: 2rem auto;
+     padding: 0;
+     background-color: #fff;
+     border-radius: 8px;
+     overflow: hidden;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ aside img {
+     width: 100%;
+     height: auto;
+     display: block;
+ }
+
+ /* Overlay heading */
+ aside h2 {
+     position: absolute;
+     top: 20px;
+     left: 20px;
+     background-color: rgba(0, 64, 128, 0.7);
+     color: #fff;
+     padding: 0.5rem 1rem;
+     border-radius: 4px;
+     font-size: 1.5rem;
+     font-weight: bold;
+ }
+
+ /* footer */
+ footer {
+     background-color: #004080;
+     color: white;
+     text-align: center;
+     padding: 1rem;
+     margin-top: 2rem;
+ }

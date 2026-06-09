@@ -1,0 +1,65 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Thunder Wave Expedition Company</title>
+    <link rel="stylesheet" href="styles/rafting1.css">
+    <meta name="description"
+      content="Get in touch with Thunder Wave Expedition Company. Find our address, phone, email, and send us your questions or reservations.">
+    <meta name="author" content="Rackara David">
+</head>
+
+<main>
+    <section>
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> 123 River Road, Kampala, Uganda</p>
+        <p><strong>Phone:</strong> +256-700-123456</p>
+        <p><strong>Email:</strong> info@thunderwaveexpedition.com</p>
+
+        <!-- Embedded Google Map -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7581740012797!2d32.286651067283756!3d-0.31460543783561157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19d7b50057ce8da3%3A0x33f4e90a0ea344cf!2sBella%20foods!5e0!3m2!1sen!2sug!4v1780999338228!5m2!1sen!2sug"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section>
+        <h2>Meet Our Team</h2>
+        <figure>
+            <img src="wwr/images/employee1.jpg" alt="Guide">
+            <figcaption>Orach Joel – Lead Guide</figcaption>
+        </figure>
+        <figure>
+            <img src="wwr/images/employee2.jpg" alt="Safety Officer">
+            <figcaption>Okello John – Safety Officer</figcaption>
+        </figure>
+        <figure>
+            <img src="wwr/images/manager1.jpg" alt="Reservations Manager">
+            <figcaption>Layet Joice – Reservations Manager</figcaption>
+        </figure>
+    </section>
+
+    <section>
+        <h2>Send Us a Message</h2>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="images/employee3.jpgemail">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <p>Purpose of Message:</p>
+            <label><input type="radio" name="purpose" value="general"> General Inquiry</label><br>
+            <label><input type="radio" name="purpose" value="reservation"> Reservation
+                Question</label><br>
+            <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly
+                newsletter</label>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
